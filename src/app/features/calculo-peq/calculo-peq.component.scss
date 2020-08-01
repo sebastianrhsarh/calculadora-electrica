@@ -1,0 +1,113 @@
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner__content {
+  background: #fff;
+  padding: 24px;
+  text-align: -webkit-center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  .content__item {
+    flex: 0 0 333px;
+  }
+
+  .calculator {
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+    background: rgb(109, 109, 109);
+  
+    .title_K1 {
+      font-size: 30px;
+      text-align: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      height: 60px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .container_input {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      
+      .container_input_div {
+        height: 12.5%;
+        
+        .input {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1280px) {
+  .inner__content {
+    flex-direction: column;
+    
+    .content__item {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.button_result {
+  width: 130px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.result_final {
+  width: 150px;
+  margin-left: 10px;
+}
+
+.image_formula {
+  width: 100%;
+}
+
+.all_results {
+  border: 1px solid black;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  background: rgb(109, 109, 109);
+  padding: 5px;
+  
+  .title_all_result {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 20%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .container_all_results {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    text-align: right;
+
+    .calculo_all_result {
+      font-size: 20px;
+      color: #EEE;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      height: 60px;
+      width: 100%;
+      margin-top: 20px;
+
+      .input_results {
+        width: 80%;
+        color: black;
+      }
+    }
+  }
+}

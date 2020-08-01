@@ -1,0 +1,36 @@
+<nz-breadcrumb>
+  <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+  <nz-breadcrumb-item>Segunda parte</nz-breadcrumb-item>
+</nz-breadcrumb>
+<div class="inner__content">
+  <div class="content__item"><img src="../assets/images/formula.png" class="image_formula"></div>
+  <div class="calculator content__item">
+    <div class="title_K1">Cálculo de K1 y K2</div>
+    <div class="container_input">
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese altura(h)" [(ngModel)]="h" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese superficie(s)" [(ngModel)]="s" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese lado Mayor(A)" [(ngModel)]="A" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese lado menor(B)" [(ngModel)]="B" />
+      </div>
+    </div>
+    <button class="button_result" (click)="k1k2()" nz-button nzType="default">Resultado</button>
+  </div>
+  <div class="all_results content__item">
+    <div class="container_all_results">
+      <div class="title_all_result">Resultados</div>
+      <div class="calculo_all_result">K1: <input class="input_results" [(ngModel)]="result_K1" /></div>
+      <div class="calculo_all_result">K2: <input class="input_results" [(ngModel)]="result_K2" /></div>
+      <div class="calculo_all_result">Rms: <input class="input_results" [(ngModel)]="result_Rms" /></div>
+    </div>
+  </div>
+</div>
+<button nz-button nzType="default" (click)="back()">Volver al menú</button>
+<button nz-button nzType="default" (click)="calculationPeq()">Volver a parte anterior</button>
+<button nz-button nzType="default" (click)="calculationRms()">Siguiente cálculo</button>

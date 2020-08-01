@@ -1,0 +1,23 @@
+:host {
+  height: 100%;
+}
+
+nz-layout {
+  height: 100%;
+}
+
+nz-content {
+  padding: 0 50px;
+  overflow-y: auto;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+}

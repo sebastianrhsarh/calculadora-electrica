@@ -1,0 +1,45 @@
+<nz-breadcrumb>
+  <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+  <nz-breadcrumb-item>Primera parte</nz-breadcrumb-item>
+</nz-breadcrumb>
+<div class="inner__content">
+  <div class="content__item"><img src="../assets/images/formula.png" class="image_formula"></div>
+  <div class="calculator content__item">
+    <div class="title_K1">Calculo de Peq</div>
+    <div class="container_input">
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese enterramiento" [(ngModel)]="burial" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese malla tentativa(m2)" [(ngModel)]="tentativeMesh" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese conductor(mm2)" [(ngModel)]="driver" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese profundidad E1" [(ngModel)]="depthE1" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese Profundidad E2" [(ngModel)]="depthE2" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese ρ1" [(ngModel)]="P1" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese ρ2" [(ngModel)]="P2" />
+      </div>
+      <div class="container_input_div">
+        <input class="input" type="text" nz-input placeholder="Ingrese ρ3" [(ngModel)]="P3" />
+      </div>
+    </div>
+    <button class="button_result" (click)="Peq()" nz-button nzType="default">Resultado</button>
+  </div>
+  <div class="all_results content__item">
+    <div class="container_all_results">
+      <div class="title_all_result">Resultados</div>
+      <div class="calculo_all_result">Peq: <input class="input_results" [(ngModel)]="result_Peq" /></div>
+    </div>
+  </div>
+</div>
+<button nz-button nzType="default" (click)="back()">Volver al menú</button>
+<button nz-button nzType="default" (click)="calculationK1K2()">Siguiente parte</button>
